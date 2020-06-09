@@ -24,7 +24,7 @@ body {
     padding: 10px;
 }
 
-/* specifiche per l'header con logo e titolo*/
+/* specifiche per HEADER con immagine, logo e titolo*/
 
 #logo_header {
     height: 300px;
@@ -48,20 +48,31 @@ body {
     text-align: center;
 }
 
+#logo_header .titolo .fa-cubes {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    position: absolute;
+
+    top: -17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 #logo_header .titolo h1 {
-    font-weight: 500;
-    font-size: 30px;
-    border: 2px solid white;
+    font-weight: 300;
+    font-size: 60px;
+    border: 5px solid white;
     display: inline-block;
-    padding: 10px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 #logo_header .titolo h4 {
-    font-weight: 100;
+    font-weight: 500;
+    font-size: 20px;
 }
 
+/* specifiche per barra orizzontale menù */
 .menu {
     height: 50px;
     background-color: #808080;
@@ -78,21 +89,17 @@ nav {
 li {
     display: inline-block;
     margin: 0 7px;
-    /* centra la linea con line-height di valore uguale all'altezza
-    dell'header */
 }
-
 
 li.active:hover {
     display:inline-block;
     border-bottom: 3px solid lightgrey;
 }
 
-
+/* SEZIONE CENTRALE (aside + main + aside) */
 
 .core {
     margin: 10px 0;
-
 }
 
 .contenitore {
@@ -101,6 +108,7 @@ li.active:hover {
     font-weight: 100;
 }
 
+/* Sezione SINISTRA - LINK BOX */
 aside {
     width: 20%;
     float: left;
@@ -111,9 +119,8 @@ aside .contenitore {
     padding: 20px;
 }
 
-.link-box i {
+.link-box .fa-rss-square {
     color: orange;
-    /* display:inline-block; */
     font-size: 25px;
     float:left;
 }
@@ -138,6 +145,7 @@ aside .contenitore {
     color: red;
 }
 
+/* MAIN */
 main {
     width: 60%;
     padding: 0 40px;
@@ -158,7 +166,7 @@ main .testo {
     margin-top: 20px;
     font-size: 12px;
 }
-
+/* Sezione DX con Aside Widget */
 .contenitore.widget {
     margin-bottom: 40px;
 }
@@ -171,7 +179,7 @@ aside .testo {
     margin-top: 20px;
     font-size: 12px;
 }
-
+/* Sezione FOOTER */
 footer {
     height: 150px;
     background-color: white;
