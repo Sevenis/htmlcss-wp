@@ -96,8 +96,6 @@ li.active:hover {
 aside {
     width: 20%;
     float: left;
-
-    height: 450px;
 }
 
 .contenitore {
@@ -106,7 +104,8 @@ aside {
 }
 
 aside .contenitore {
-    background-color: violet;
+    background-color: white;
+    padding: 20px;
 }
 
 main {
@@ -120,13 +119,17 @@ main .contenitore {
     padding: 20px;
 }
 
-main .contenitore h3 {
-    margin-bottom: 20px;
+
+main .testo {
+    margin-top: 20px;
 }
 
-.contenitore.piccolo {
-    height: 210px;
-    margin-bottom: 10px;
+.contenitore.widget {
+    margin-bottom: 40px;
+}
+
+aside .testo {
+    margin-top: 20px;
 }
 
 footer {
