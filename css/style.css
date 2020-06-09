@@ -39,7 +39,7 @@ body {
     object-position: center;
 }
 
-.titolo {
+#logo_header .titolo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,19 +93,40 @@ li.active:hover {
 
 }
 
+.contenitore {
+    height: 100%;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
 aside {
     width: 20%;
     float: left;
 }
 
-.contenitore {
-    height: 100%;
-    border-radius: 5px;
-}
-
 aside .contenitore {
     background-color: white;
     padding: 20px;
+}
+
+.link-box i {
+    color: orange;
+    /* display:inline-block; */
+    font-size: 25px;
+}
+
+.link-box h1 {
+    font-weight: 100;
+    display: inline-block;
+}
+
+.link {
+    margin: 12px 0;
+    color: green;
+}
+
+.link:hover {
+    color: red;
 }
 
 main {
@@ -119,6 +140,10 @@ main .contenitore {
     padding: 20px;
 }
 
+main h3 {
+    font-weight: 100;
+    text-shadow: 2px 2px #cccccc;
+}
 
 main .testo {
     margin-top: 20px;
@@ -134,5 +159,26 @@ aside .testo {
 
 footer {
     height: 150px;
-    background-color: grey;
+    background-color: white;
+    color: lightgray;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+footer .up {
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+.logo_footer {
+    width:33%;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    margin: 10px 0;
 }
