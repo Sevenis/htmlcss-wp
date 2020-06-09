@@ -10,17 +10,79 @@
     clear: both;
 }
 
+body {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url('https://organicthemes.com/demo/natural/wp-content/themes/organic-natural/images/default-pattern.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
-/*  width: 100vw;
-    height: 100vh; */
     padding: 10px;
 }
 
-header {
-    height: 150px;
+/* specifiche per l'header con logo e titolo*/
 
-    background-color: yellow;
+#logo_header {
+    height: 300px;
+    border: 7px solid white;
+    position: relative;
 }
+
+#logo_header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titolo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    text-align: center;
+}
+
+
+h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+h4 {
+    color: white;
+    font-weight: 100;
+}
+
+.menu {
+    height: 50px;
+    background-color: grey;
+    line-height: 50px;
+}
+
+nav {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    /* centra la linea con line-height di valore uguale all'altezza
+    dell'header */
+}
+
+
+li.active:hover {
+    display:inline-block;
+    border-bottom: 2px solid green;
+}
+
+
 
 .core {
     margin: 10px 0;
