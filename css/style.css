@@ -11,7 +11,7 @@
 }
 
 body {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     background-image: url('https://organicthemes.com/demo/natural/wp-content/themes/organic-natural/images/default-pattern.png');
     background-size: cover;
@@ -49,29 +49,33 @@ body {
 }
 
 
-h1 {
+.titolo h1 {
     color: white;
     font-weight: 300;
     font-size: 30px;
 }
 
-h4 {
+.titolo h4 {
     color: white;
     font-weight: 100;
 }
 
 .menu {
     height: 50px;
-    background-color: grey;
+    background-color: #808080;
     line-height: 50px;
+    text-align: center;
 }
 
 nav {
     display: inline-block;
+    color: white;
+    font-size: 12px;
 }
 
 li {
     display: inline-block;
+    margin: 0 7px;
     /* centra la linea con line-height di valore uguale all'altezza
     dell'header */
 }
@@ -79,13 +83,14 @@ li {
 
 li.active:hover {
     display:inline-block;
-    border-bottom: 2px solid green;
+    border-bottom: 3px solid black;
 }
 
 
 
 .core {
     margin: 10px 0;
+
 }
 
 aside {
@@ -97,6 +102,7 @@ aside {
 
 .contenitore {
     height: 100%;
+    border-radius: 5px;
 }
 
 aside .contenitore {
@@ -105,13 +111,17 @@ aside .contenitore {
 
 main {
     width: 60%;
-    height: 500px;
-    padding: 0 10px;
+    padding: 0 40px;
     float: left;
 }
 
 main .contenitore {
-    background-color: red;
+    background-color: white;
+    padding: 20px;
+}
+
+main .contenitore h3 {
+    margin-bottom: 20px;
 }
 
 .contenitore.piccolo {
